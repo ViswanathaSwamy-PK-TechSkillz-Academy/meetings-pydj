@@ -17,6 +17,9 @@ cd meeting_planner
 py .\manage.py runserver
 
 py .\manage.py startapp website
+
+py .\manage.py showmigrations
+py .\manage.py migrate
 ```
 
 ## Reference(s)
