@@ -18,6 +18,7 @@ class Meeting(models.Model):
     date = models.DateField()
     start_time = models.TimeField(default=time(9))
     duration = models.IntegerField(default=1)
+    room = models.ForeignKey(Room, on_delete=models.CASCADE)
     # location = models.CharField(max_length=200)
     # agenda = models.TextField()
 
