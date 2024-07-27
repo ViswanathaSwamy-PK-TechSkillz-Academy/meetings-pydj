@@ -15,6 +15,8 @@ django-admin startproject meeting_planner
 
 cd meeting_planner
 py .\manage.py runserver
+
+py .\manage.py startapp website
 ```
 
 ## Reference(s)
