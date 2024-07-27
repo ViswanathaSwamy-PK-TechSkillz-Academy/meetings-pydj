@@ -9,8 +9,8 @@ python -m venv .venv
 .\.venv\Scripts\activate
 
 python.exe -m pip install --upgrade pip
-py -m pip install Django~=5.0.7
 
+py -m pip install Django~=5.0.7
 django-admin startproject meeting_planner
 
 cd meeting_planner
