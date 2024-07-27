@@ -10,6 +10,8 @@ python -m venv .venv
 
 python.exe -m pip install --upgrade pip
 py -m pip install Django~=5.0.7
+
+django-admin startproject meeting_planner
 ```
 
 ## Reference(s)
