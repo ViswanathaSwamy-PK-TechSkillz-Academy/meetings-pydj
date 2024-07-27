@@ -5,5 +5,9 @@ I am learning Meetings Application using Python Django from different Video Cour
 ## Few Commands
 
 ```powershell
-
+python -m venv .venv
 ```
+
+## Reference(s)
+
+> 1. <https://docs.python.org/3/library/venv.html>
