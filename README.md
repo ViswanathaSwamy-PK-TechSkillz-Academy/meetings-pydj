@@ -20,6 +20,8 @@ py .\manage.py startapp website
 
 py .\manage.py showmigrations
 py .\manage.py migrate
+
+py .\manage.py startapp meetings
 ```
 
 ## Reference(s)
