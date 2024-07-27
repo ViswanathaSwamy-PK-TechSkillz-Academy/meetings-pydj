@@ -6,6 +6,9 @@ I am learning Meetings Application using Python Django from different Video Cour
 
 ```powershell
 python -m venv .venv
+python.exe -m pip install --upgrade pip
+
+py -m pip install Django~=5.0.7
 ```
 
 ## Reference(s)
