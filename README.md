@@ -22,6 +22,9 @@ py .\manage.py showmigrations
 py .\manage.py migrate
 
 py .\manage.py startapp meetings
+py .\manage.py makemigrations
+py .\manage.py showmigrations
+py .\manage.py migrate
 ```
 
 ## Reference(s)
