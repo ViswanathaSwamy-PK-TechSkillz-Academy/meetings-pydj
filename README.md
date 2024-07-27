@@ -26,7 +26,11 @@ py .\manage.py makemigrations
 py .\manage.py showmigrations
 py .\manage.py migrate
 py .\manage.py sqlmigrate meetings 0001
+
+py .\manage.py createsuperuser
 ```
+
+![Create Super User](documentation/images/CreateSuperUser.PNG)
 
 ## Reference(s)
 
