@@ -5,7 +5,7 @@ from django.shortcuts import render
 
 
 def welcome(request):
-    return render(request, "../templates/website/welcome.html")
+    return render(request, "website/welcome.html")
 
 
 def about(request):
