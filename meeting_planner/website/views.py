@@ -5,8 +5,12 @@ from django.shortcuts import render
 
 
 def welcome(request):
-    return HttpResponse("Welcome to the Meeting Planner!")
+    return render(request, "../templates/website/welcome.html")
 
 
 def about(request):
     return HttpResponse("I'm  Swamy The Learner !!")
+
+
+# def welcome(request):
+#     return HttpResponse("Welcome to the Meeting Planner!")
