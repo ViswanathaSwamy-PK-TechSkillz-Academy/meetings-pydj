@@ -1,4 +1,7 @@
+<!-- This should be the first tag -->
 {% extends "base.html" %}
+
+{% load static %}
 
 {% block title %}Welcome{% endblock %}
 
@@ -10,6 +13,8 @@
     on <a href="https://www.pluralsight.com">
         Pluralsight</a>.
 </p>
+
+<img src="{% static 'website/calendar.png' %}" alt="Meeting" width="100px">
 
 <div class="meeting-container">
     <h2>Meetings</h2>
