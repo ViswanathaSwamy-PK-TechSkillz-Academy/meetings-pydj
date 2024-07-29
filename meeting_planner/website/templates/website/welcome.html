@@ -40,5 +40,9 @@
         </tbody>
     </table>
 </div>
-<a href="{% url 'rooms' %}">Rooms list</a>
+<div>
+    <form action="{% url 'rooms' %}">
+        <button type="submit" class="btn-blue">Rooms list</button>
+    </form>
+</div>
 {% endblock %}
