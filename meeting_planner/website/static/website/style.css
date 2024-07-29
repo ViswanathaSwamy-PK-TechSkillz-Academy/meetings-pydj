@@ -1,6 +1,7 @@
 body {
     font-family: sans-serif;
-    color: rgb(19, 98, 245);
+    /* color: rgb(19, 98, 245); */
+    color: navy;
     /* background-color: floralwhite; */
     height: 100vh;
     margin: 0;
@@ -23,7 +24,11 @@ body {
 
 h2 {
     text-align: center;
-    color: navy;
+}
+
+a {
+    color: rgb(19, 98, 245);
+    text-decoration: none;
 }
 
 table {
