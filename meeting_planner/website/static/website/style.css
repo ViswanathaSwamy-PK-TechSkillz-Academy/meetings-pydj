@@ -1,0 +1,66 @@
+body {
+    font-family: sans-serif;
+    color: rgb(19, 98, 245);
+    /* background-color: floralwhite; */
+    height: 100vh;
+    margin: 0;
+}
+
+.meeting-container {
+    width: 90%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #f2f2f2;
+    margin: 0 auto;
+    /* Center horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center content inside the div */
+}
+
+h2 {
+    text-align: center;
+    color: navy;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border: 1px solid #ccc;
+    border-spacing: 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    /* For rounded corners with borders */
+}
+
+thead {
+    background-color: #f2f2f2;
+    color: navy;
+}
+
+thead th {
+    padding: 10px;
+    border: 1px solid #ddd;
+    /* Add border to th elements */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fff;
+}
+
+tbody td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
