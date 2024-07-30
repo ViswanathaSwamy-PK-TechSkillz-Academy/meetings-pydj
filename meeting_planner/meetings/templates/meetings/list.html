@@ -1,21 +1,9 @@
 <!-- This should be the first tag -->
 {% extends "base.html" %}
 
-{% load static %}
-
-{% block title %}Welcome{% endblock %}
+{% block title %}Rooms{% endblock %}
 
 {% block content %}
-<h1>Welcome to the Meeting Planner!</h1>
-<p>
-    This is the demo application for the course
-    <em>Django: Getting Started</em>
-    on <a href="https://www.pluralsight.com">
-        Pluralsight</a>.
-</p>
-
-<img src="{% static 'website/calendar.png' %}" alt="Meeting" width="100px">
-
 <div class="meeting-container">
     <h2>Meetings</h2>
     <table>
@@ -44,10 +32,5 @@
             {% endfor %}
         </tbody>
     </table>
-</div>
-<div>
-    <form action="{% url 'rooms' %}">
-        <button type="submit" class="btn-blue">Rooms list</button>
-    </form>
 </div>
 {% endblock %}

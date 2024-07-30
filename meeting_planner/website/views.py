@@ -11,8 +11,11 @@ def welcome(request):
 
 
 def about(request):
-    return HttpResponse("I'm  Swamy The Learner !!")
+    return render(request, "website/about.html")
 
 
 # def welcome(request):
 #     return HttpResponse("Welcome to the Meeting Planner!")
+
+# def about(request):
+#     return HttpResponse("I'm  Swamy The Learner !!")
