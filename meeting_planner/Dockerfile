@@ -10,11 +10,18 @@ COPY requirements.txt /app/
 # Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Verify Django installation (optional)
+RUN pip show django
+
 # Copy the rest of the application code into the container
 COPY . /app/
 
 # Set environment variables
 ENV PYTHONUNBUFFERED=1
+
+# Create a non-root user and switch to it
+RUN useradd -ms /bin/sh appuser
+USER appuser
 
 # Expose the port that Gunicorn will run on
 EXPOSE 8000
