@@ -1,21 +1,23 @@
-# Use a Python image with Gunicorn installed
-FROM python:3.12-slim
+# Use the official Python image from the Docker Hub
+FROM python:3.12
 
-# Set environment variables
-ENV PYTHONUNBUFFERED 1
-
-# Create and set the working directory
+# Set the working directory
 WORKDIR /app
 
-# Install dependencies
+# Copy the requirements file into the container
 COPY requirements.txt /app/
+
+# Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy application files
+# Copy the rest of the application code into the container
 COPY . /app/
 
-# Expose the port Gunicorn will run on
+# Set environment variables
+ENV PYTHONUNBUFFERED=1
+
+# Expose the port that Gunicorn will run on
 EXPOSE 8000
 
-# Run Gunicorn
+# Start Gunicorn
 CMD ["gunicorn", "--bind", "0.0.0.0:8000", "meeting_planner.wsgi:application"]
