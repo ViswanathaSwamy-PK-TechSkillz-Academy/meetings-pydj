@@ -63,11 +63,17 @@ jobs:
           name: python-app
           path: ./
 
-      - name: List files (optional)
+      - name: Print working directory
+        run: pwd
+
+      - name: List files before unzipping
         run: ls -la ./
 
       - name: Unzip artifact for deployment
         run: unzip release.zip
+
+      - name: List files after unzipping
+        run: ls -la ./
 
       - name: Login to Azure
         uses: azure/login@v2
