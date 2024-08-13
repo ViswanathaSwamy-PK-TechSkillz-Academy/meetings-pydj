@@ -10,6 +10,10 @@ on:
       - main
   workflow_dispatch:
 
+defaults:
+  run:
+    working-directory: "./meeting_planner"
+    
 jobs:
   build:
     runs-on: ubuntu-latest
