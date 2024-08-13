@@ -45,7 +45,7 @@ jobs:
           name: python-app
           path: |
             release.zip
-            !venv/
+            ./meeting_planner
 
   deploy:
     runs-on: ubuntu-latest
