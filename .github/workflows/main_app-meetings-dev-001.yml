@@ -63,6 +63,9 @@ jobs:
           name: python-app
           path: ./
 
+      - name: List files (optional)
+        run: ls -la ./
+
       - name: Unzip artifact for deployment
         run: unzip ./meeting_planner/release.zip
 
